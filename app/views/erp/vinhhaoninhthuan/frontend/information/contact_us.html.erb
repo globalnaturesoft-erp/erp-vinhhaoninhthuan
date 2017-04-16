@@ -1,0 +1,136 @@
+<main id="maincontent" class="page-main">
+    <a id="contentarea" tabindex="-1"></a>
+    <div class="columns col1-layout">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 col-md-12">
+                    <div class="breadcrumbs">
+                        <ul class="items">
+                            <li class="item home">
+                                <%= link_to "Trang Chủ", erp_vinhhaoninhthuan.root_path, title: "Quay về trang chủ" %>
+                            </li>
+                            <li class="item">
+                                <strong>Liên Hệ</strong>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="page-title-wrapper">
+                        <h1 class="page-title">
+                            <span class="base">Liên Hệ</span>
+                        </h1>
+                    </div>                    
+                    <div class="category-view">
+                        <div class="category-cms">
+                            <div class="contact-us-page">
+                                <div class="top-des">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus ante dapibus diam. Sed nisi. Nulla quis sem at nibh elementum imperdiet.</div>
+                                <div class="block-address">
+                                    <div class="address-item">
+                                        <div class="block-title">Address 1</div>
+                                        <div class="block-content">
+                                            <ul>
+                                                <li class="address-contact">3515 EN, Utrecht, The Netherlands</li>
+                                                <li class="telephone">
+                                                    <p>Tel: 084 - 00 - 12345678</p>
+                                                    <p>Tel: 084 - 00 - 12345689</p>
+                                                </li>
+                                                <li class="emai-contact">Email: <a class="linkcontact" href="mailto:contact@ytcvn.com">contact@ytcvn.com</a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <div class="address-item">
+                                        <div class="block-title">Address 2</div>
+                                        <div class="block-content">
+                                            <ul>
+                                                <li class="address-contact">3515 EN, Utrecht, The Netherlands</li>
+                                                <li class="telephone">
+                                                    <p>Tel: 084 - 00 - 12345678</p>
+                                                    <p>Tel: 084 - 00 - 12345689</p>
+                                                </li>
+                                                <li class="emai-contact">Email: <a class="linkcontact" href="mailto:contact@ytcvn.com">contact@ytcvn.com</a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="contact-form-wrapper">
+                                    <form class="form contact" action="http://magento2.flytheme.net/themes/sm_sport/default/contact/index/post/" id="contact-form" method="post" data-hasrequired="* Required Fields" data-mage-init='{"validation":{}}'>
+                                        <fieldset class="fieldset">
+                                            <div class="left-input">
+                                                <div class="field name required">
+                                                    <div class="title-input">Name*</div>
+                                                    <div class="control">
+                                                        <div class="input-content">
+                                                            <span class="fa fa-user"></span>
+                                                            <input name="name" id="name" title="Name" value="" class="input-text" type="text" data-validate="{required:true}" />
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="field email required">
+                                                    <div class="title-input">Email*</div>
+                                                    <div class="control">
+                                                        <div class="input-content">
+                                                            <span class="fa fa-envelope"></span>
+                                                            <input name="email" id="email" title="Email" value="" class="input-text" type="email" data-validate="{required:true, 'validate-email':true}" />
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="field telephone">
+                                                    <div class="title-input">Phone</div>
+                                                    <div class="control">
+                                                        <div class="input-content">
+                                                            <span class="fa fa-globe"></span>
+                                                            <input name="telephone" id="telephone" title="Phone Number" value="" class="input-text" type="text" />
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                                <div class="field comment required">
+                                                    <div class="title-input">Comment*</div>
+                                                    <div class="control">
+                                                        <div class="input-content">
+                                                            <span class="fa fa-comments"></span>
+                                                            <textarea name="comment" id="comment" title="What’s on your mind?" class="input-text" cols="5" rows="3" data-validate="{required:true}"></textarea>
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                                <div class="field comment required">
+                                                    <div class="title-input"></div>
+                                                    <div class="control">
+                                                        <div class="actions-toolbar">
+                                                            <div class="primary">
+                                                                <input type="hidden" name="hideit" id="hideit" value="" />
+                                                                <div class="required">* Required Fields</div>
+                                                                <button type="submit" title="Send Message" class="action submit primary">
+								<span>Send Message</span>
+							</button>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                        </fieldset>
+
+                                    </form>
+                                </div>
+                                <div class="google-map">
+                                    <script src="http://maps.google.com/maps/api/js?key=AIzaSyCdLmykXAklykOYyXdILXpZvQGPmc58LIk" type="text/javascript"></script>
+                                    <div id="map">&nbsp;</div>
+                                    <script type="text/javascript">
+                                        var myOptions = {
+                                            zoom: 15,
+                                            scrollwheel: false,
+                                            center: new google.maps.LatLng(48.89364, 2.33739),
+                                            mapTypeId: google.maps.MapTypeId.ROADMAP
+                                        };
+                                        var map = new google.maps.Map(document.getElementById("map"), myOptions);
+                                    </script>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</main>

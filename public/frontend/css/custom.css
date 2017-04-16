@@ -13,3 +13,9 @@ body {
 #yt-totop {
   background-color: #239ee2;
 }
+.col2-layout .category-product.products-grid .item {
+  width: 25%;
+}
+.footer-style-1 .footer-bottom {
+  background-image: url('/frontend/images/footer-water.jpg');
+}

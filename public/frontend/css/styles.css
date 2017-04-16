@@ -26,7 +26,7 @@
 		width: 33.333333333333%;
 	}
 	
-	.col2-layout .category-product.products-grid .item:nth-child(3n+1){
+	.col2-layout .category-product.products-grid .item:nth-child(4n+1){
 		clear:both;
 	}
 

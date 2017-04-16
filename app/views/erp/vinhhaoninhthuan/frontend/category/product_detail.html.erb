@@ -1,2 +1,139 @@
-<h1>Category#product_detail</h1>
-<p>Find me in app/views/erp/category/product_detail.html.erb</p>
+<main id="maincontent" class="page-main">
+    <a id="contentarea" tabindex="-1"></a>
+    <div class="columns col1-layout">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 col-md-12">
+                    <div class="breadcrumbs">
+                        <ul class="items">
+                            <li class="item home">
+                                <%= link_to "Trang Chủ", erp_vinhhaoninhthuan.root_path, title: "Quay về trang chủ" %>
+                            </li>
+                            <li class="item">
+                                <strong>Nước Vĩnh Hảo</strong>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="column main"><input name="form_key" type="hidden" value="82U0VdoLXi8zGfkm">                        
+                        <div class="detail-2 thumb-horizontal">
+                            <div class="row">
+                                <div class="col-lg-9 col-md-9 content-detail">
+                                    <div class="row">
+                                        <div class="col-lg-6 col-md-6 image-box-detail">
+                                            <div class="product media">                                                
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-6 col-md-6 info-box-detail">
+                                            <div class="info-detail-container">
+                                                <div class="product-info-main">
+                                                    <div class="page-title-wrapper product">
+                                                        <h1 class="page-title">
+                                                            <span class="base">Sản Phẩm Nước Vĩnh Hảo</span> </h1>
+                                                    </div>
+                                                    <div class="product-info-price">
+                                                        <div class="price-box price-final_price">
+                                                            <span class="price-container price-final_price tax weee">
+                                                                <span class="price-wrapper ">
+                                                                    <span class="price">150,000đ</span>
+                                                                </span>
+                                                            </span>
+                                                        </div>                                                            
+                                                        <div class="product attribute overview">
+                                                            <div class="value" itemprop="description">
+                                                                <p>Mô tả sản phẩm...</p>
+                                                            </div>
+                                                        </div>
+                                                    </div>                                                                                                      
+                                                </div>                                                
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-12 col-md-12">
+                                            <div class="content-product-detail">
+                                                <div class="upsell-wrapper">
+                                                    <div class="detail-title">
+                                                        <span>Sản Phẩm Khác</span>
+                                                    </div>
+                                                    <div class="upsell-block products-grid">                                                    
+                                                        <div class="products list items product-items row">
+                                                            <% (0..2).each do |item| %>
+                                                            <div class="col-lg-4 col-md-4 col-sm-4 item product product-item">
+                                                                <div class="product-item-info">
+                                                                    <div class="item-inner">
+                                                                        <div class="box-image">
+                                                                            <a href="<%= erp_vinhhaoninhthuan.product_detail_path %>" class="product photo product-item-photo" tabindex="-1">
+                                                                                <span class="product-image-container">
+                                                                                  <span class="product-image-wrapper">
+                                                                                      <img class="product-image-photo" src="/frontend/images/g13_2.jpg" width="300" height="200" alt="Rumasi Rema Pokemon Go"/>
+                                                                                  </span>
+                                                                                </span>
+                                                                            </a>
+                                                                            <!--LABEL PRODUCT-->
+                                                                            <div class="label-product label-new">
+                                                                                <span class="new-product-icon">Mới</span>
+                                                                            </div>
+                                                                            <!--END LABEL PRODUCT-->
+                                                                        </div>
+                                                                        <div class="product details product-item-details box-info">
+                                                                            <h2 class="product name product-item-name product-name">
+                                                                                <%= link_to "Nước Vĩnh Hảo", erp_vinhhaoninhthuan.product_detail_path, title: "", class: "product-item-link" %>
+                                                                            </h2>
+                                                                            <div class="price-box price-final_price">
+                                                                                <span class="price-container price-final_price tax weee">
+                                                                                    <span class="price-wrapper ">
+                                                                                        <span class="price">150,000đ</span>
+                                                                                    </span>
+                                                                                </span>
+                                                                            </div>                                                  
+                                                                            <div class="hover-content"></div>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            <% end %>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-3 col-md-3 left-detail">                                    
+                                    <div class="related-wrapper">
+                                        <div class="block products-sidebar block-related">
+                                            <div class="block-title">
+                                                <strong>Sản Phẩm Liên Quan</strong>
+                                            </div>
+                                            <div class="block-content">
+                                                <% (0..4).each do |item| %>
+                                                <div class="item bs-item">
+                                                    <div class="item-inner">
+                                                        <div class="box-image">
+                                                            <%= link_to image_tag("/frontend/images/g13_2.jpg", alt: ""), "", title: "", class: "product photo product-item-photo" %>
+                                                        </div>
+
+                                                        <div class="box-info">
+                                                            <h2 class="product name product-item-name product-name">
+                                                                <%= link_to "Tên sản phẩm", "", title: "" %>
+                                                            </h2>
+                                                            <div class="price-box price-final_price">
+                                                                <span class="price-container price-final_price tax weee">
+                                                                    <span class="price-wrapper ">
+                                                                    <span class="price">120,000 đ</span>
+                                                                </span>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <% end %>
+                                            </div>
+                                        </div>
+                                    </div>                                    
+                                </div>
+                            </div>
+                        </div>                        
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</main>

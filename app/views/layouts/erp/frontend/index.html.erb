@@ -54,7 +54,7 @@
     <%= stylesheet_link_tag "/frontend/css/custom.css" %>
 </head>
 
-<body data-container="body" class="cms-home cms-index-index page-layout-1column">    
+<body data-container="body" <% if @body_class.present? %>class="<%= @body_class %>"<% end %>>    
     <noscript>
         <div class="message global noscript">
             <div class="content">
