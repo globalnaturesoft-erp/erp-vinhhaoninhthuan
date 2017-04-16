@@ -1,0 +1,129 @@
+<div id="vhnt_imageslider" class="sm-imageslider imgsl-preload theme1">
+    <div class="sm-imageslider-loading">
+        <div class="bubblingG">
+            <span id="bubblingG_1">
+        </span>
+            <span id="bubblingG_2">
+        </span>
+            <span id="bubblingG_3">
+        </span>
+        </div>
+    </div>
+    <div class="sm-imageslider-inner theme1">
+        <div class="sm-imageslider-content owl-carousel">
+            <div class="item">
+                <div class="item-image">
+                    <%= link_to image_tag("/frontend/images/slideshow/slide-1.jpg", alt: ""), "", title: "" %>
+                </div>
+            </div>
+            <div class="item">
+                <div class="item-image">
+                    <%= link_to image_tag("/frontend/images/slideshow/slide-2.jpg", alt: ""), "", title: "" %>
+                </div>
+            </div>
+            <div class="item">
+                <div class="item-image">
+                    <%= link_to image_tag("/frontend/images/slideshow/slide-1.jpg", alt: ""), "", title: "" %>
+                </div>
+            </div>
+            <div class="item">
+                <div class="item-image">
+                    <%= link_to image_tag("/frontend/images/slideshow/slide-2.jpg", alt: ""), "", title: "" %>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<script>
+  
+require([
+		'jquery',
+		'owlcarousel'
+], function($) {
+		var bs_slider = $(".slider-product-mega");
+		bs_slider.owlCarousel({
+				responsive: {
+						0: {
+								items: 1
+						},
+						480: {
+								items: 1
+						},
+						768: {
+								items: 1
+						},
+						992: {
+								items: 1
+						},
+						1200: {
+								items: 1
+						}
+				},
+				autoplay: false,
+				loop: false,
+				nav: true, // Show next and prev buttons
+				dots: false,
+				autoplaySpeed: 500,
+				navSpeed: 500,
+				dotsSpeed: 500,
+				autoplayHoverPause: true,
+				margin: 30,
+		});
+});
+  require([
+		'jquery',
+		'owlcarousel'
+], function($) {;
+		(function(element) {
+				var $element = $(element),
+						$sm_imageslider = $('.sm-imageslider-content', $element);
+
+				$(window).on('load', function() {
+						setTimeout(function() {
+								$('.sm-imageslider-loading', $element).remove();
+								$element.removeClass('imgsl-preload');
+								__runImageSlider();
+
+						}, 1000);
+
+				});
+
+				function __runImageSlider() {
+						$sm_imageslider.owlCarousel({
+
+								center: false,
+								startPosition: 0,
+								margin: 1,
+								responsive: {
+										0: {
+												items: 1
+										},
+										768: {
+												items: 1
+										}
+								},
+
+
+								nav: true,
+								loop: true,
+								dots: true,
+								dotsSpeed: 1000,
+
+								navText: ['&#139;', '&#155;'],
+								slideBy: 1,
+								autoplay: true,
+								autoplayTimeout: 5000,
+								autoplayHoverPause: true,
+								autoplaySpeed: 800,
+
+								navSpeed: 1000,
+								mouseDrag: true,
+
+								responsiveRefreshRate: 100,
+						});
+				}
+
+
+		})('#vhnt_imageslider');
+});
+</script>

@@ -1,0 +1,15 @@
+body {
+  font-family: Open Sans;
+}
+.products-grid .item .product-item-info .item-inner .box-image .product-item-photo::before {
+  background-color: transparent;
+}
+.header-style-1 .header-top {
+  background-image: url('/frontend/images/menu-header.jpg');
+}
+.header-style-1 .header-top .navigation-megamenu-wrapper .sm_megamenu_wrapper_horizontal_menu .sm_megamenu_menu > li.sm_megamenu_actived > a, .header-style-1 .header-top .navigation-megamenu-wrapper .sm_megamenu_wrapper_horizontal_menu .sm_megamenu_menu > li:hover > a, .header-style-1 .header-top .navigation > ul > li:hover > a, .header-style-1 .header-top .navigation > ul > li.active > a {
+  background-color: #EA151A;
+}
+#yt-totop {
+  background-color: #239ee2;
+}

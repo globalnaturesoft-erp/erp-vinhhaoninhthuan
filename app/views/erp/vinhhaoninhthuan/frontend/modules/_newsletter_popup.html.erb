@@ -1,0 +1,85 @@
+<div class="display-popup" style="display:none;">
+    <div id="newsletter-popup">
+        <div class="promotional-popup">
+            <div class="pop-subscribe">
+                <form class="form subscribe" novalidate action="http://magento2.flytheme.net/themes/sm_sport/default/newsletter/subscriber/new/" method="post" data-mage-init='{"validation": {"errorClass": "mage-error"}}' id="newsletter-validate-detail">
+                    <div class="w-newsletter">
+                        <div class="image-newsletter">
+                            <div class="static-image">
+                                <a title="Image Newsletter" href="#"><img src="/frontend/images/image-popup-newsletter.jpg" alt="Newsletter" /></a>
+                            </div>
+                        </div>
+
+                        <div class="newsletter-info">
+                            <div class="newsletter-title">
+                                <h3>Newsletter</h3>
+                            </div>
+
+                            <div class="short-description">
+                                <p>Subscribe to the Sport mailing list to receive updates on new arrivals, special offers and other discount information.</p>
+                            </div>
+
+                            <div class="form-newsletter-popup">
+                                <div class="input-box">
+                                    <input name="email" type="email" id="newsletter" placeholder="Enter your email address" data-validate="{required:true, 'validate-email':true}" />
+                                </div>
+
+                                <div class="action-newsletter">
+                                    <button class="action subscribe primary" title="Subscribe" type="submit">
+                                <span>Subscribe</span>
+                            </button>
+                                </div>
+                            </div>
+
+                            <div class="subscribe-bottom">
+                                <div id="uniform-dont-show-again" class="checker"><span><input id="dont-show-again" type="checkbox"></span></div><label for="dont-show-again">Don't show this popup again</label></div>
+
+                            <div class="socials-popup">
+                                <ul class="social-list">
+                                    <li><a title="title" href="#"><i class="fa fa-facebook"></i><span class="hidden">Facebook</span></a></li>
+                                    <li><a title="title" href="#"><i class="fa fa-twitter"></i><span class="hidden">Twitter</span></a></li>
+                                    <li><a title="title" href="#"><i class="fa fa-google-plus"></i><span class="hidden">Google</span></a></li>
+                                    <li><a title="title" href="#"><i class="fa fa-tumblr"></i><span class="hidden">Tumblr</span></a></li>
+                                    <li><a title="title" href="#"><i class="fa fa-pinterest"></i><span class="hidden">Pinterest</span></a></li>
+                                    <li><a title="title" href="#"><i class="fa fa-linkedin"></i><span class="hidden">Linkedin</span></a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script type="text/javascript">
+    require([
+        'jquery',
+        'jquerycookie',
+        'jqueryfancyboxpack'
+    ], function($) {
+        var check_cookie = jQuery.cookie('newsletter_popup');
+        if (check_cookie == null || check_cookie == 'shown') {
+            popupNewsletter();
+        }
+        jQuery('#newsletter-popup .subscribe-bottom input').on('click', function() {
+            if (jQuery(this).parent().find('input:checked').length) {
+                var check_cookie = jQuery.cookie('newsletter_popup');
+                if (check_cookie == null || check_cookie == 'shown') {
+                    jQuery.cookie('newsletter_popup', 'dontshowitagain');
+                } else {
+                    jQuery.cookie('newsletter_popup', 'shown');
+                    popupNewsletter();
+                }
+            } else {
+                jQuery.cookie('newsletter_popup', 'shown');
+            }
+        });
+    });
+
+    function popupNewsletter() {
+        jQuery(document).ready(function($) {
+            $.fancybox.open('#newsletter-popup');
+        });
+    };
+</script>

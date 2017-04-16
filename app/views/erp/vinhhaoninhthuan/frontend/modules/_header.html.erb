@@ -1,0 +1,36 @@
+<div class="header-top">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-3 col-md-3">
+                <div class="logo-header">
+                    <div class="logo-wrapper">
+                        <%= render "erp/vinhhaoninhthuan/frontend/modules/header/logo" %>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-9 col-md-9">
+                <div class="navigation-header-container">
+                    <div class="megamenu-container">
+                        <div class="navigation-megamenu-wrapper">
+                            <%= render "erp/vinhhaoninhthuan/frontend/modules/header/main_menu" %>
+                        </div>
+                    </div>
+
+                    <div class="navigation-mobile-container">
+                        <!--COLLAPSE-->
+                        <!--SIDEBAR-->
+                        <div class="nav-mobile-container sidebar-type">
+                            <div class="btn-mobile">
+                                <a id="sidebar-button" class="button-mobile sidebar-nav" title="CHUYÊN MỤC"><i class="fa fa-bars"></i><span class="hidden">CHUYÊN MỤC</span></a>
+                            </div>
+                            <nav class="navigation-mobile">
+                                <%= render "erp/vinhhaoninhthuan/frontend/modules/header/mobile_menu" %>
+                            </nav>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
