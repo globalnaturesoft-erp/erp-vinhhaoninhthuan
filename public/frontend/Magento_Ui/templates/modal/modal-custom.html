@@ -1,0 +1,27 @@
+
+<!-- saved from url=(0124)http://magento2.flytheme.net/themes/sm_sport/pub/static/frontend/Sm/sport/en_US/Magento_Ui/templates/modal/modal-custom.html -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"></head><body><aside class="modal-&lt;%= data.type %&gt; &lt;%= data.modalClass %&gt;
+       &lt;% if(data.responsive){ %&gt;&lt;%= data.responsiveClass %&gt;&lt;% } %&gt;
+       &lt;% if(data.innerScroll){ %&gt;&lt;%= data.innerScrollClass %&gt;&lt;% } %&gt;" data-role="modal" data-type="&lt;%= data.type %&gt;" tabindex="0">
+    <div data-role="focusable-start" tabindex="0"></div>
+    <div class="modal-inner-wrap" data-role="focusable-scope">
+        <header class="modal-header">
+            &lt;% if(data.title){ %&gt;
+            <h1 class="modal-title" data-role="title">&lt;%= data.title %&gt;</h1>
+            &lt;% } %&gt;
+            <button class="action-close" data-role="closeBtn" type="button">
+                <span>&lt;%= data.closeText %&gt;</span>
+            </button>
+        </header>
+        <div class="modal-content" data-role="content"></div>
+        &lt;% if(data.buttons.length &gt; 0){ %&gt;
+        <footer class="modal-footer">
+            &lt;% _.each(data.buttons, function(button) { %&gt;
+            <button class="&lt;%= button.class %&gt;" type="button" data-role="action"><span>&lt;%= button.text %&gt;</span></button>
+            &lt;% }); %&gt;
+        </footer>
+        &lt;% } %&gt;
+    </div>
+    <div data-role="focusable-end" tabindex="0"></div>
+</aside>
+</body></html>

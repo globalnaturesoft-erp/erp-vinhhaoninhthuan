@@ -1,0 +1,72 @@
+
+<!-- saved from url=(0131)http://magento2.flytheme.net/themes/sm_sport/pub/static/frontend/Sm/sport/en_US/Magento_Customer/template/authentication-popup.html -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"></head><body><div class="block-authentication" data-bind="afterRender: setModalElement, blockLoader: isLoading" style="display: none">
+    <div class="block block-new-customer" data-bind="attr: {&#39;data-label&#39;: $t(&#39;or&#39;)}">
+        <div class="block-title">
+            <strong id="block-new-customer-heading" role="heading" aria-level="2" data-bind="i18n: &#39;Checkout out as a new customer&#39;"></strong>
+        </div>
+        <div class="block-content" aria-labelledby="block-new-customer-heading">
+            <p data-bind="i18n: &#39;Creating an account has many benefits:&#39;"></p>
+            <ul>
+                <li data-bind="i18n: &#39;See order and shipping status&#39;"></li>
+                <li data-bind="i18n: &#39;Track order history&#39;"></li>
+                <li data-bind="i18n: &#39;Check out faster&#39;"></li>
+            </ul>
+            <div class="actions-toolbar">
+                <div class="primary">
+                    <a class="action action-register primary" data-bind="attr: {href: registerUrl}">
+                        <span data-bind="i18n: &#39;Create an Account&#39;"></span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="block block-customer-login" data-bind="attr: {&#39;data-label&#39;: $t(&#39;or&#39;)}">
+        <div class="block-title">
+            <strong id="block-customer-login-heading" role="heading" aria-level="2" data-bind="i18n: &#39;Checkout out using your account&#39;"></strong>
+        </div>
+        <!-- ko foreach: getRegion('messages') -->
+        <!-- ko template: getTemplate() --><!-- /ko -->
+        <!--/ko-->
+        <!-- ko foreach: getRegion('before') -->
+        <!-- ko template: getTemplate() --><!-- /ko -->
+        <!-- /ko -->
+        <div class="block-content" aria-labelledby="block-customer-login-heading">
+            <form class="form form-login" method="post" data-bind="submit:login" id="login-form">
+                <div class="fieldset login" data-bind="attr: {&#39;data-hasrequired&#39;: $t(&#39;* Required Fields&#39;)}">
+                    <div class="field email required">
+                        <label class="label" for="email"><span data-bind="i18n: &#39;Email Address&#39;"></span></label>
+                        <div class="control">
+                            <input name="username" id="email" type="email" class="input-text" data-bind="attr: {autocomplete: autocomplete}" data-validate="{required:true, &#39;validate-email&#39;:true}">
+                        </div>
+                    </div>
+                    <div class="field password required">
+                        <label for="pass" class="label"><span data-bind="i18n: &#39;Password&#39;"></span></label>
+                        <div class="control">
+                            <input name="password" type="password" class="input-text" id="pass" data-bind="attr: {autocomplete: autocomplete}" data-validate="{required:true}">
+                        </div>
+                    </div>
+                    <!-- ko foreach: getRegion('additional-login-form-fields') -->
+                    <!-- ko template: getTemplate() --><!-- /ko -->
+                    <!-- /ko -->
+                    </div>
+                    <div class="actions-toolbar">
+                        <input name="context" type="hidden" value="checkout">
+                        <div class="primary">
+                            <button type="submit" class="action action-login secondary" name="send" id="send2">
+                                <span data-bind="i18n: &#39;Sign In&#39;"></span>
+                            </button>
+                        </div>
+                        <div class="secondary">
+                            <a class="action" data-bind="attr: {href: forgotPasswordUrl}">
+                                <span data-bind="i18n: &#39;Forgot Your Password?&#39;"></span>
+                            </a>
+                        </div>
+                    </div>
+                </form></div>
+            
+        </div>
+    </div>
+
+</body></html>

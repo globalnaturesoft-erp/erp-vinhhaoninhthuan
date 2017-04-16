@@ -1,0 +1,38 @@
+
+<!-- saved from url=(0123)http://magento2.flytheme.net/themes/sm_sport/pub/static/frontend/Sm/sport/en_US/Magento_Ui/templates/modal/modal-slide.html -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"></head><body><aside class="modal-&lt;%= data.type %&gt; &lt;%= data.modalClass %&gt;
+           &lt;% if(data.innerScroll){ %&gt;&lt;%= data.innerScrollClass %&gt;&lt;% } %&gt;" data-role="modal" data-type="&lt;%= data.type %&gt;" tabindex="0">
+    <div data-role="focusable-start" tabindex="0"></div>
+    <div class="modal-inner-wrap" data-role="focusable-scope">
+        <header class="modal-header">
+            <h1 class="modal-title" data-role="title">
+                &lt;% if(data.title){ %&gt;
+                    &lt;%= data.title %&gt;
+                &lt;% } %&gt;
+                <span data-role="subTitle">
+                    &lt;% if(data.subTitle){ %&gt;
+                        &lt;%= data.subTitle %&gt;
+                    &lt;% } %&gt;
+                </span>
+            </h1>
+            <button class="action-close" data-role="closeBtn" type="button">
+                <span>&lt;%= data.closeText %&gt;</span>
+            </button>
+            &lt;% if(data.buttons.length &gt; 0){ %&gt;
+            <div class="page-main-actions">
+                <div class="page-actions">
+                    <div class="page-actions-buttons">
+                        &lt;% _.each(data.buttons, function(button) { %&gt;
+                        <button class="&lt;%= button.class %&gt;" type="button" data-role="action"><span>&lt;%= button.text %&gt;</span>
+                        </button>
+                        &lt;% }); %&gt;
+                    </div>
+                </div>
+            </div>
+            &lt;% } %&gt;
+        </header>
+        <div class="modal-content" data-role="content"></div>
+    </div>
+    <div data-role="focusable-end" tabindex="0"></div>
+</aside>
+</body></html>
